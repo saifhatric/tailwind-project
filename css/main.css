@@ -918,6 +918,7 @@ body{
   background-repeat: no-repeat;
   background-size: 880px;
   background-position: 95% -35%;
+  overflow-x: hidden;
 }
 
 @media(max-width:576px){
@@ -971,6 +972,19 @@ body{
 
 .open .hamburger-bottom{
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.box{
+  transform: translateX(400%);
+  transition: transform 0.9s ease;
+}
+
+.box:nth-of-type(even){
+  transform: translateX(-400%);
+}
+
+.box.show{
+  transform: translateX(0);
 }
 
 .hover\:bg-brightRedLight:hover {
